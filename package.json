@@ -1,6 +1,6 @@
 {
-  "name": "nova-watch",
-  "version": "1.0.0",
+  "name": "nova-state-watch",
+  "version": "1.0.1",
   "description": "Deep reactive state watcher — Proxy-based, zero dependencies, batched change notifications, path-level watching.",
   "main": "src/nova-watch.js",
   "module": "src/nova-watch.js",

@@ -1,5 +1,7 @@
 # NovaWatch
 
+# nova-state-watch
+
 A tiny (~2KB unminified, zero dependencies) deep reactive state watcher built on `Proxy`. Mutate a plain object naturally — arrays included — and get notified on change, batched into a single callback per tick.
 
 Think `useEffect`, but for any plain JS object, anywhere (Node, vanilla browser, or a framework).
@@ -7,7 +9,7 @@ Think `useEffect`, but for any plain JS object, anywhere (Node, vanilla browser,
 ## Install
 
 ```bash
-npm install nova-watch
+npm install nova-state-watch
 ```
 
 Or drop it in via CDN:
