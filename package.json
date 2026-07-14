@@ -4,11 +4,17 @@
   "description": "Deep reactive state watcher — Proxy-based, zero dependencies, batched change notifications, path-level watching.",
   "main": "src/nova-watch.js",
   "module": "src/nova-watch.js",
+  "exports": {
+    ".": "./src/nova-watch.js"
+  },
   "unpkg": "src/nova-watch.js",
   "jsdelivr": "src/nova-watch.js",
   "files": [
     "src"
   ],
+  "scripts": {
+    "test": "node test/nova-watch.test.js"
+  },
   "keywords": [
     "proxy",
     "reactive",
@@ -24,7 +30,11 @@
     "url": "https://github.com/abhinandanacharya/nova-watch"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/abhinandanacharya/nova-watch",
+  "bugs": {
+    "url": "https://github.com/abhinandanacharya/nova-watch/issues"
   },
   "engines": {
     "node": ">=12"
