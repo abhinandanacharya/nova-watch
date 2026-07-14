@@ -25,7 +25,7 @@ Or drop it in via CDN:
 ## Quick start
 
 ```js
-const { createWatch } = require('nova-watch');
+const { createWatch } = require('nova-state-watch');
 
 const billing = createWatch({
   order: { discount: { type: '', value: 0 } }
