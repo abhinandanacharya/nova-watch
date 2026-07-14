@@ -1,0 +1,29 @@
+{
+  "name": "nova-watch",
+  "version": "1.0.0",
+  "description": "Deep reactive state watcher — Proxy-based, zero dependencies, batched change notifications, path-level watching.",
+  "main": "src/nova-watch.js",
+  "module": "src/nova-watch.js",
+  "unpkg": "src/nova-watch.js",
+  "jsdelivr": "src/nova-watch.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "proxy",
+    "reactive",
+    "state",
+    "watcher",
+    "observable",
+    "deep-watch"
+  ],
+  "author": "Abhinandan Acharya",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhinandanacharya/nova-watch"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

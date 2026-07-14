@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaWatch — CDN Example</title>
+  <!-- Once published: -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/nova-watch@1/dist/nova-watch.min.js"></script> -->
+  <script src="../dist/nova-watch.min.js"></script>
+</head>
+<body>
+  <h1>Open the console</h1>
+
+  <script>
+    function calculateBilling(data) {
+      console.log('calculateBilling called with:', data);
+    }
+
+    const billing = NovaWatch.createWatch({
+      product: [],
+      order: { totals: {}, discount: { type: '', value: 0 } }
+    });
+
+    billing.watch((changes, state) => calculateBilling(state));
+
+    const data = billing.proxy;
+    data.order.discount.type = 'flat';
+    data.order.discount.value = 500;
+    data.product.push({ id: 1, name: 'Chair', price: 4000 });
+    // -> calculateBilling fires once, after the microtask flush
+  </script>
+</body>
+</html>
